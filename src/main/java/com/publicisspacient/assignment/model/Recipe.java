@@ -16,11 +16,11 @@ public class Recipe {
     private Integer caloriesPerServing;
     private String image;
 
-    // ✅ Default constructor (required by JPA)
+    
     public Recipe() {
     }
 
-    // ✅ Parameterized constructor
+    
     public Recipe(Long id, String name, String cuisine, String difficulty, Integer caloriesPerServing, String image) {
         this.id = id;
         this.name = name;
@@ -30,7 +30,7 @@ public class Recipe {
         this.image = image;
     }
 
-    // ✅ Getters and Setters
+    
     public Long getId() {
         return id;
     }
@@ -79,7 +79,7 @@ public class Recipe {
         this.image = image;
     }
 
-    // ✅ For debugging/logging
+    
     @Override
     public String toString() {
         return "Recipe{" +
